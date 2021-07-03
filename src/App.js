@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-// import './App.css';
 
 const api = {
   key: "8f9736b1dea7512d749c5c2badc7bcb3",
@@ -67,6 +66,8 @@ function App() {
           <input type="text" className="search-bar" placeholder="Search..."
             onChange={e => setQuery(e.target.value)} value={query} onKeyPress={search} />
         </div>
+   
+        
         {(typeof weather.main != "undefined") ? (
           <div>
 
